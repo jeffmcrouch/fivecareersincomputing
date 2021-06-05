@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    
+<category>
+    <think>Hello  How are you  I am doing well</think>
+</category>
+    
+<category>
+    <pattern>Hello</pattern>
+    <template>Hello  How are you  I am doing well</template>
+</category>
+
+<category>
+    <pattern>*</pattern>
+    <that>Hello  How are you  I am doing well</that>
+    <template>I hope that your day only improves  I am here to help you with a career in Computer Science  Please enter 0 to start the session</template>
+</category>
+
+
+
+<category>
+    <pattern>Choices</pattern>
+	<template>
+	Here are the Choices
+	Enter 0 to start a new session
+	Enter 1 to discuss Development such as Software Development or Web Development or Programming in C++ or JAVA or Python   
+	Enter 2 to discuss Hot Computer Science Careers such as Data Science or Artificial Intelligence or Big Data or Cloud Computing or Cybersecurity 
+	Enter 3 to discuss Database Related careers such as Database Administrator or SQL Developer or SQL Reports Writer 
+	Enter 4 to discuss Analytics Related careers such as Process Engineering or System Analytics or User Interface Design or QA  
+	Enter 5 to discuss Infrastructure-Related careers such as Hardware Engineering or Software Engineering or IT Management or Security
+	Enter Quit to quit
+	</template>
+</category>
+
+<category>
+	<pattern>No</pattern>
+    <template>Thanks for the reply  
+	Here are the Choices
+	Enter 0 to start a new session
+	Enter 1 to discuss Development such as Software Development or Web Development or Programming in C++ or JAVA or Python   
+	Enter 2 to discuss Hot Computer Science Careers such as Data Science or Artificial Intelligence or Big Data or Cloud Computing or Cybersecurity
+	Enter 3 to discuss Database Related careers such as Database Administrator or SQL Developer or SQL Reports Writer 
+	Enter 4 to discuss Analytics Related careers such as Process Engineering or System Analytics or User Interface Design or QA  
+	Enter 5 to discuss Infrastructure-Related careers such as Hardware Engineering or Software Engineering or IT Management or Security
+	Enter Quit to quit
+	</template>
+</category>
+
+<category>
+	<pattern>0</pattern>
+	<template>Let us start with your name  What is your name</template>
+</category>
+
+<category>
+	<pattern>*</pattern>
+    <that>Let us start with your name  What is your name</that>
+	<template>Nice to meet you <set name="name"><star/></set> What do you like about computing  Enter Choices to see a selection</template>
+</category>
+
+<category>
+	<pattern>1</pattern>
+	<template>Do you like Software Development Web Development or Programming  Enter Yes or No</template>
+</category>
+
+<category>
+	<pattern>Yes</pattern>
+	<that>Do you like Software Development Web Development or Programming  Enter Yes or No</that>
+	<template>Thanks for the reply  Here are additional options for a career in Development  Enter Development to consider them</template>
+</category>
+
+
+<category>
+	<pattern>Development</pattern>
+	<template>Enter Software Development or Web Development or CPlusPlus  JAVA  Python or Programmer Generalist</template>
+</category>
+
+<category>
+	<pattern>*</pattern>
+	<that>Enter Software Development or Web Development or CPlusPlus  JAVA  Python or Programmer Generalist</that>
+	<template>Your answer to the question about programming is <set name="name"><star/></set> You have made a rewarding choice  Enter Quit to quit</template>
+</category>
+
+
+<category>
+	<pattern>2</pattern>
+	<template>Do you like one of the Hot Careers in Computer Science such as Data Science or Artificial Intelligence or Big Data or Cloud Computing or Cybersecurity  Enter Yes or No</template>
+</category>
+
+<category>
+	<pattern>Yes</pattern>
+	<that>Do you like one of the Hot Careers in Computer Science such as Data Science or Artificial Intelligence or Big Data or Cloud Computing or Cybersecurity  Enter Yes or No</that>
+	<template>Thanks for the reply  Here are some of the careers in one of the Hot Careers in Computer Science  Enter Hot Careers to consider these fields</template>
+</category>
+
+<category>
+	<pattern>Hot Careers</pattern>
+	<template>Enter Data Science or Artificial Intelligence or Big Data or Cloud Computing or Cybersecurity</template>
+</category>
+
+<category>
+	<pattern>*</pattern>
+	<that>Enter Data Science or Artificial Intelligence or Big Data or Cloud Computing or Cybersecurity</that>
+	<template>Your answer to the question about Hot Careers in Computer Science is <set name="name"><star/></set> You have made a rewarding choice  Enter Quit to quit</template>
+</category>
+
+<category>
+	<pattern>3</pattern>
+	<template>Do you like one of the Database Related Fields in Computer Science such as Database Administrator or SQL Developer or SQL Reports Writer Enter Yes or No</template>
+</category>
+
+<category>
+	<pattern>Yes</pattern>
+	<that>Do you like one of the Database Related Fields in Computer Science such as Database Administrator or SQL Developer or SQL Reports Writer Enter Yes or No</that>
+	<template>Thanks for the reply  Here are some of the careers in one of the Database Related Fields in Computer Science  Enter Database to consider these fields</template>
+</category>
+
+<category>
+	<pattern>Database</pattern>
+	<template>Enter Database Administrator or SQL Developer or SQL Reports Writer</template>
+</category>
+
+<category>
+	<pattern>*</pattern>
+	<that>Enter Database Administrator or SQL Developer or SQL Reports Writer</that>
+	<template>Your answer to the question about Database Related Fields in Computer Science is <set name="name"><star/></set> You have made a rewarding choice  Enter Quit to quit</template>
+</category>
+
+<category>
+	<pattern>4</pattern>
+	<template>Do you like an Analytics field in computer science such as Process Engineering or System Analytics or User Interface Design or QA   Enter Yes or No</template>
+</category>
+
+<category>
+	<pattern>Yes</pattern>
+	<that>Do you like an Analytics field in computer science such as Process Engineering or System Analytics or User Interface Design or QA   Enter Yes or No</that>
+	<template>Thanks for the reply  Here are some of the careers in one of the Analytics-Related Fields in Computer Science  Enter Analytics to consider these fields</template>
+</category>
+
+<category>
+	<pattern>Analytics</pattern>
+	<template>Enter Process Engineering or System Analytics or User Interface Design or QA</template>
+</category>
+
+<category>
+	<pattern>*</pattern>
+	<that>Enter Process Engineering or System Analytics or User Interface Design or QA</that>
+	<template>Your answer to the question about Analytics-Related Fields in Computer Science is <set name="name"><star/></set> You have made a rewarding choice  Enter Quit to quit</template>
+</category>
+
+<category>
+	<pattern>5</pattern>
+	<template>Do you like an Infrastructure field in computer science such as Hardware Engineering or Software Engineering or IT Management or Security  Enter Yes or No</template>
+</category>
+
+<category>
+	<pattern>Yes</pattern>
+	<that>Do you like an Infrastructure field in computer science such as Hardware Engineering or Software Engineering or IT Management or Security  Enter Yes or No</that>
+	<template>Thanks for the reply  Here are some of the careers in one of the Infrastructure-Related Fields in Computer Science  Enter Infrastructure to consider these fields</template>
+</category>
+
+<category>
+	<pattern>Infrastructure</pattern>
+	<template>Enter Hardware Engineering or Software Engineering or IT Management or Security</template>
+</category>
+
+<category>
+	<pattern>*</pattern>
+	<that>Enter Hardware Engineering or Software Engineering or IT Management or Security</that>
+	<template>Your answer to the question about Infrastructure-Related Fields in Computer Science is <set name="name"><star/></set> You have made a rewarding choice  Enter Quit to quit</template>
+</category>
+
+<category>
+	<pattern>Quit</pattern>
+	<template>Goodbye</template>
+</category>
+
+
+
+<category>
+	<pattern>*</pattern>
+	<template>Hello I am here to help you with a career in Computer Science  Please enter 0 to start the session</template>
+</category>
+
+</aiml>
